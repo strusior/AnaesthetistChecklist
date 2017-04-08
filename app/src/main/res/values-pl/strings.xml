@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lista kontrolna anestezjologa</string>
+    <string name="patient_name">Nazwisko pacjenta</string>
+    <string name="patient_name2">"Nazwisko pacjenta: "</string>
+    <string name="cal_BMI">Oblicz BMI</string>
+    <string name="check">sprawdź</string>
+    <string name="denture_question">Czy sztuczna szczęka została usunięta?</string>
+    <string name="earrings_question">Czy usunąłeś *wszystkie* kolczyki?</string>
+    <string name="fluids_question">Co i kiedy piłeś?</string>
+    <string name="height">Wzrost w centymetrach [cm]</string>
+    <string name="meal_question">Kiedy ostatnio jadłeś?</string>
+    <string name="medicines_question">Czy wziałeś swoje lekarstwa?</string>
+    <string name="send_to_sys">Wyślij do systemu</string>
+    <string name="weight">Masa ciała w kilogramach [kg]</string>
+    <string name="no">nie</string>
+    <string name="nothing">nic</string>
+    <string name="other_fluids">inne płyny</string>
+    <string name="water_earlier">wodę - wcześniej niż 2 godziny temu</string>
+    <string name="water_later">wodę - poźniej niż dwie godziny temu</string>
+    <string name="yes">tak</string>
+    <string name="check_result">WYNIK SPRAWDZENIA:</string>
+    <string name="denture">"Sztuczna szczęka: "</string>
+    <string name="earrings">"Kolczyki: "</string>
+    <string name="fluids">"Płyny: "</string>
+    <string name="meal">"Posiłek: "</string>
+    <string name="medicines">"Leki: "</string>
+    <string name="denture2">sztuczna szczęka</string>
+    <string name="earrings2">Kolczyki</string>
+    <string name="fluids2">płyny</string>
+    <string name="meal2">posiłek</string>
+    <string name="medicines2">leki</string>
+    <string name="wrong">źle</string>
+    <string name="checklist_for">"Lista kontrolna dla "</string>
+    <string name="good_to_go">Gotowy do znieczulenia!</string>
+    <string name="go_back">"Wróć! "</string>
+</resources>

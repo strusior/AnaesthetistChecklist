@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.anaesthetistchecklist.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+
+            android:id="@+id/name_of_patient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/patient_name"
+            android:inputType="text"
+            android:textColorHint="#8bc34a" />
+
+        <EditText
+
+            android:id="@+id/weight_of_patient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/weight"
+            android:inputType="number"
+            android:textColorHint="#8bc34a" />
+
+        <EditText
+
+            android:id="@+id/height_of_patient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/height"
+            android:inputType="number"
+            android:textColorHint="#8bc34a" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:onClick="calculateBMIButtonClicked"
+            android:text="@string/cal_BMI" />
+
+        <TextView
+            style="@style/Questions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/medicines_question" />
+
+        <RadioGroup
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10sp">
+
+            <RadioButton
+                android:id="@+id/medicines_check_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onMedicinesButtonClicked"
+                android:text="@string/yes" />
+
+            <RadioButton
+                android:id="@+id/medicines_check_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onMedicinesButtonClicked"
+                android:text="@string/no" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/Questions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/meal_question" />
+
+        <RadioGroup
+            android:id="@+id/meal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10sp">
+
+            <RadioButton
+                android:id="@+id/meal_check_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onMealButtonClicked"
+                android:text="&#62;6h" />
+
+            <RadioButton
+                android:id="@+id/meal_check_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onMealButtonClicked"
+                android:text="&#60;6h" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/Questions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fluids_question" />
+
+        <CheckBox
+            android:id="@+id/fluids_check_box1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="7dp"
+            android:button="@drawable/test"
+            android:paddingLeft="3dp"
+            android:text="@string/nothing"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/fluids_check_box2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="12dp"
+            android:button="@drawable/test"
+            android:paddingLeft="3dp"
+            android:text="@string/water_earlier"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/fluids_check_box3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="12dp"
+            android:button="@drawable/test"
+            android:paddingLeft="3dp"
+            android:text="@string/water_later"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/fluids_check_box4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="12sp"
+            android:button="@drawable/test"
+            android:paddingLeft="3dp"
+            android:text="@string/other_fluids"
+            android:textSize="16sp" />
+
+        <TextView
+            style="@style/Questions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/denture_question" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10sp">
+
+            <RadioButton
+                android:id="@+id/denture_check_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onDentureButtonClicked"
+                android:text="@string/yes" />
+
+            <RadioButton
+                android:id="@+id/denture_check_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onDentureButtonClicked"
+                android:text="@string/no" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/Questions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/earrings_question" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10sp">
+
+            <RadioButton
+                android:id="@+id/earrings_check_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onEarringsButtonClicked"
+                android:text="@string/yes" />
+
+            <RadioButton
+                android:id="@+id/earrings_check_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onEarringsButtonClicked"
+                android:text="@string/no" />
+        </RadioGroup>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckButtonClicked"
+            android:text="@string/check" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="sendViaEmail"
+            android:text="@string/send_to_sys" />
+
+    </LinearLayout>
+</ScrollView>

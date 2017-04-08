@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Anaesthetist Checklist</string>
+    <string name="patient_name">Name of patient</string>
+    <string name="patient_name2">"Name of patient: "</string>
+    <string name="weight">Weight in kilos [kg]</string>
+    <string name="height">Height in centimeters [cm]</string>
+    <string name="cal_BMI">Calculate BMI</string>
+    <string name="medicines_question">Did you take your medicines?</string>
+    <string name="meal_question">When did you have your last meal?</string>
+    <string name="fluids_question">What and when did you drink?</string>
+    <string name="denture_question">Did you remove your denture?</string>
+    <string name="earrings_question">Did you remove *all* your earrings?</string>
+    <string name="check">check</string>
+    <string name="send_to_sys">Send to system</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="nothing">nothing</string>
+    <string name="water_earlier">water - earlier than 2 hours ago</string>
+    <string name="water_later">water - later than 2 hours ago</string>
+    <string name="other_fluids">other fluids</string>
+    <string name="wrong">wrong</string>
+    <string name="ok" translatable="false">ok</string>
+    <string name="check_result">CHECK RESULT:</string>
+    <string name="medicines">"Medicines: "</string>
+    <string name="meal">"Meal: "</string>
+    <string name="fluids">"Fluids: "</string>
+    <string name="denture">"Denture: "</string>
+    <string name="earrings">"Earrings: "</string>
+    <string name="medicines2">medicines</string>
+    <string name="meal2">meal</string>
+    <string name="fluids2">fluids</string>
+    <string name="denture2">denture</string>
+    <string name="earrings2">earrings</string>
+    <string name="checklist_for">"Checklist for "</string>
+    <string name="good_to_go">Good to go!</string>
+    <string name="go_back">"Go back! "</string>
+
+</resources>
